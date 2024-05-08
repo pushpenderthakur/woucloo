@@ -89,7 +89,6 @@ header {  position: relative;   z-index: 2;  box-shadow: 0px 3px 5px rgba(0, 0, 
 .cart-box a, .user-box a { width: 43px; height: 43px; display: flex; align-items: center; justify-content: center;   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); border-radius: 100%;}
 .cart-box a img, .user-box a img{transition:all 0.3s}
 .cart-box a:hover img, .user-box a:hover img{filter: brightness(0) invert(0);}
-
 @media all and (min-width:768px){
     .hide-desktop{display:none;}
 }

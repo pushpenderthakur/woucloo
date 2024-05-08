@@ -8,35 +8,74 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
 <link href="src/fonts/stylesheet.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="src/css/style.css" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="flex">
+            <div class="flex item-center">
                 <div class="logo-box">
                     <a href="index.html"><img src="src/images/woucloo logo-06-06.png" alt="logo"></a>                
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Top Traders</a></li>
-                        <li><a href="#">Packages</a></li>
-                        <li><a href="">Want Wear</a></li>
-                        <li><a href="">Messages</a></li>
-                    </ul>
+                <div class="menu-box">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Top Traders</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="">sub link</a>
+                                </li>
+                                <li>
+                                    <a href="">sub link</a>
+                                </li>
+                                <li>
+                                    <a href=""> sub link </a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Packages</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">sub link</a>
+                                    </li>
+                                    <li>
+                                        <a href="">sub link</a>
+                                    </li>
+                                    <li>
+                                        <a href=""> sub link </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Want Wear</a></li>
+                            <li><a href="">Messages</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="cart-user-box">
+                        <div class="cart-box">
+                            <a href=""><img src="src/images/Icon feather-shopping-cart.png" alt="cart"></a>
+                        </div>
+                        <div class="user-box">
+                            <a href=""><img src="src/images/Icon feather-user.png" alt="cart"></a>
+                        </div>
+                    </div>
+                    <div class="btn-last">
+                        <a href="#">156 <img src="src/images/woucloo logo-icon.png" alt="icon"></a>
+                    </div>
                 </div>
-                <div class="header-search">
-                    <input type="text" placeholder="Search">
+                <div class="toggle-box hide-desktop">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
                 </div>
-                <div class="cart-user-box">
-                    <div class="cart-box"></div>
-                    <div class="user-box"></div>
-                </div>
-                <div class="btn-last">
-                    <a href="#">156</a>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -120,7 +159,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -129,10 +168,21 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -152,7 +202,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -161,10 +211,21 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -184,7 +245,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -193,10 +254,21 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -216,7 +288,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -225,10 +297,21 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -248,7 +331,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -257,10 +340,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -280,7 +386,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -289,10 +395,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -312,7 +441,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -321,10 +450,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -344,7 +496,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -353,10 +505,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -394,7 +569,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -403,10 +578,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -426,7 +624,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -435,10 +633,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -458,7 +679,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -467,10 +688,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -490,7 +734,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -499,10 +743,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -522,7 +789,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -531,10 +798,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -554,7 +844,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -563,10 +853,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -586,7 +899,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -595,10 +908,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">
@@ -618,7 +954,7 @@
                         <img src="src/images/product-img.png" alt="product">
                     </div>
                     <div class="product-title">
-                        <h3>Product Title</h3>
+                        <h5>Product Title</h5>
                         <div class="icon-box">
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
                             <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
@@ -627,10 +963,33 @@
                     <div class="product-info">
                         <div class="user-rating-box">
                             <div class="user-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <a href="#">@Username123</a>
                             </div>
                             <div class="rating-box">
-                                <a href="#"><icon><img src="src/images/Icon feather-user.png"></icon></a>
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
                             </div>
                         </div>
                         <div class="price-sold-items">

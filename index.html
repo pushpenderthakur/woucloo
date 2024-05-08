@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="flex item-center">
+            <div class="flex item-center header-inner">
                 <div class="logo-box">
                     <a href="index.html"><img src="src/images/woucloo logo-06-06.png" alt="logo"></a>                
                 </div>
@@ -55,6 +55,7 @@
                     </div>
                     <div class="header-search">
                         <input type="text" placeholder="Search">
+                        
                     </div>
                     <div class="cart-user-box">
                         <div class="cart-box">
@@ -91,6 +92,7 @@
                 <div class="content-box">
                     <h1><span>We</span> Picked <span>Some</span> Bright<br>
                         Cool Things <span>For You!</span></h1>
+                        <a href="" class="btn-white">ASK TO TRADE</a>
                 </div>
             </div>
         </div>
@@ -104,6 +106,7 @@
                 <div class="content-box">
                     <h1><span>We</span> Picked <span>Some</span> Bright<br>
                         Cool Things <span>For You!</span></h1>
+                        <a href="" class="btn-white">ASK TO TRADE</a>
                 </div>
             </div>
         </div>
@@ -117,6 +120,7 @@
                 <div class="content-box">
                     <h1><span>We</span> Picked <span>Some</span> Bright<br>
                         Cool Things <span>For You!</span></h1>
+                        <a href="" class="btn-white">ASK TO TRADE</a>
                 </div>
             </div>
         </div>
@@ -124,14 +128,14 @@
     <section class="product-menu">
         <div class="container">
             <div class="row">
-                <ul class="flex gap30">
-                    <li><a href=""><img src="src/images/woman-clothes.png" alt="Dress"> <span>Dress</span></a></li>
-                    <li><a href=""><img src="src/images/bottom.png" alt="Bottoms"><span>bottoms</span></a></li>
-                    <li><a href=""><img src="src/images/shoes.png" alt="shoes"><span>Footwear</span></a></li>
-                    <li><a href=""><img src="src/images/baby-clothing.png" alt="Kids colthing"><span>Kids Colthing</span></a></li>
-                    <li><a href=""><img src="src/images/sweater.png" alt="Outer Wear"><span>Outer Wear</span></a></li>
-                    <li><a href=""><img src="src/images/tops.png" alt="Tops"><span>Tops</span></a></li>
-                    <li><a href=""><img src="src/images/hair.png" alt="Hair"><span>Hair</span></a></li>
+                <ul class="flex gap40">
+                    <li><a href=""><icon><img src="src/images/woman-clothes.png" alt="Dress"></icon> <span>Dress</span></a></li>
+                    <li><a href=""><icon><img src="src/images/bottom.png" alt="Bottoms"></icon><span>bottoms</span></a></li>
+                    <li><a href=""><icon><img src="src/images/shoes.png" alt="shoes"></icon><span>Footwear</span></a></li>
+                    <li><a href=""><icon><img src="src/images/baby-clothing.png" alt="Kids colthing"></icon><span>Kids Colthing</span></a></li>
+                    <li><a href=""><icon><img src="src/images/sweater.png" alt="Outer Wear"></icon><span>Outer Wear</span></a></li>
+                    <li><a href=""><icon><img src="src/images/tops.png" alt="Tops"></icon><span>Tops</span></a></li>
+                    <li><a href=""><icon><img src="src/images/hair.png" alt="Hair"></icon><span>Hair</span></a></li>
                 </ul>
             </div>
         </div>
@@ -143,7 +147,16 @@
                 <div class="right-box">
                     <div class="filter-box">
                         <icon><a href="#"><img src="src/images/fillter.png" alt=""></a></icon>
-                        
+                        <div class="featured-fillter-box">
+                            <h5>Category</h5>
+                            <ul>
+                                <li><a href="">Women T-shirts</a></li>
+                                <li><a href="">Women Tops And Tunics</a></li>
+                                <li><a href="">Men's Fashion</a></li>
+                                <li><a href="">Kid's Fashion</a></li>
+                                <li><a href="">Shoes</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="btn-box ">
                         <a class="btn-Seashell" href="#">See More</a>
@@ -158,40 +171,72 @@
                     <div class="img-box">
                         <img src="src/images/product-img.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
-                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
-                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>
+                    
+                    
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image2.png" alt="product">
+                    </div>
+                    
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,42 +244,73 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image3.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
-                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
-                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>
+                    
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image4.png" alt="product">
+                    </div>
+                    
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,42 +318,35 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image5.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
-                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
-                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -285,42 +354,71 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image6.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
-                                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
-                                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>   
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image7.png" alt="product">
+                    </div>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,219 +426,35 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image8.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
-                    <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
-                    </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
                             </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
-                    <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
-                    </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
-                            </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
-                    <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
-                    </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
-                            </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -549,7 +463,7 @@
         </div>
     </section>
     <!--section end here-->
-    <section class="featured-items">
+    <section class="featured-items regular-items-sec">
         <div class="container">
             <div class="heading-box">
                 <h2>Regular Items</h2>
@@ -568,52 +482,72 @@
                     <div class="img-box">
                         <img src="src/images/product-img.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>
+                    
+                    
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image2.png" alt="product">
+                    </div>
+                    
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -621,54 +555,73 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image3.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>
+                    
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image4.png" alt="product">
+                    </div>
+                    
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -676,54 +629,35 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image5.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -731,54 +665,71 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image6.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
+                    </div>   
+                </div>
+                <!--product box end-->
+                <!--product box start-->
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="src/images/product-image7.png" alt="product">
+                    </div>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
+                            </div>
                         </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -786,223 +737,308 @@
                 <!--product box start-->
                 <div class="product-box">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="src/images/product-image8.png" alt="product">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="product-box-outer">
+                        <div class="product-title">
+                            <h5>Product Title</h5>
+                            <div class="icon-box">
+                                <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
+                                <icon><a href="#"><img src="src/images/wish-list-icon.png"></a></icon>  
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                        <div class="product-info">
+                            <div class="user-rating-box">
+                                <div class="user-box">
+                                    <a href="#">@Username123</a>
+                                </div>
+                                <div class="rating-box">
+                                    <div class="rating-group">
+                                        <img src="src/images/rating-starts.png" alt="rating">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                            <div class="price-sold-items">
+                                <h3>$230 </h3>
+                                <p>290 items Sold</p>
+                            </div>
+                            <div class="button-row">
+                            <a href="#" class="btn-Seashell">Ask To Trade</a>
+                            <a href="#" class="btn-Seashell">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
+            </div>
+        </div>
+    </section>
+    <!--section end here-->
+    <section class="closet-gallery-sec">
+        <div class="container">
+            <div class="heading-box">
+                <h2>Regular Items</h2>
+                <div class="right-box">
+                    <div class="btn-box ">
+                        <a class="btn-black" href="#">See More</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--heading-box end-->
+            <div class="items-row grid gap20 three-grid">
+                <div class="items-box flex">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="./src/images/closet-img.png" alt="Closet">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
                             </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
                         </div>
                     </div>
                 </div>
-                <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
+                <!--end items-box-->
+                <div class="items-box flex">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="./src/images/closet-img.png" alt="Closet">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
                             </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
                         </div>
                     </div>
                 </div>
-                <!--product box end-->
-                <!--product box start-->
-                <div class="product-box">
+                <!--end items-box-->
+                <div class="items-box flex">
                     <div class="img-box">
-                        <img src="src/images/product-img.png" alt="product">
+                        <img src="./src/images/closet-img.png" alt="Closet">
                     </div>
-                    <div class="product-title">
-                        <h5>Product Title</h5>
-                        <div class="icon-box">
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>
-                            <icon><a href="#"><img src="src/images/Icon feather-user.png"></a></icon>  
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="user-rating-box">
-                            <div class="user-box">
-                                <a href="#">@Username123</a>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
                             </div>
-                            <div class="rating-box">
-                                <div class="rating-group">
-                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-                                </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
                             </div>
                         </div>
-                        <div class="price-sold-items">
-                            <h3>$230 </h3>
-                            <p>290 items Sold</p>
-                        </div>
-                        <div class="button-row">
-                        <a href="#" class="btn-Seashell">Ask To Trade</a>
-                        <a href="#" class="btn-Seashell">View Details</a>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
                         </div>
                     </div>
                 </div>
-                <!--product box end-->
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
+                <div class="items-box flex">
+                    <div class="img-box">
+                        <img src="./src/images/closet-img.png" alt="Closet">
+                    </div>
+                    <div class="info-box">
+                        <div class="content-box flex">
+                            <div class="box">
+                                <h5>Closet Name</h5>
+                                <a href="">@Username123</a>
+                                <p>Montreal Qubic</p>
+                            </div>
+                            <div class="rating">
+                                <a href=""><img src="./src/images/rating-starts.png" alt="rating"></a>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="" class="btn-white border-dark">VIEW CLOSET </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end items-box-->
             </div>
         </div>
     </section>

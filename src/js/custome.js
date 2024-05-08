@@ -8,3 +8,7 @@ $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1
   });
+
+  $('.toggle-box a').click(function() {
+    $('.menu-box').toggle('slow');
+});

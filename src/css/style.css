@@ -201,10 +201,63 @@ section.register-sec .btn-box { margin-top: 50px; margin-bottom: 0;}
 .banner .back-btn-box a { width: 71px; height: 71px;background: var(--white); border-radius: 100%; display: flex; align-items: center;justify-content: center;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);}
 .banner .back-btn-box a:hover{opacity: 0.7;}
 /*--*/
-section.user-sec-main .container {  display: flex; gap: 88px;}
-section.user-sec-main .side-bar{background: var(--white); border-radius: 10px; border: 1px solid var(--border-dark); padding:24px 0; box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);max-width: 30%; width: 100%;}
-section.user-sec-main .side-bar .user-img-txt-box { padding:0 30px;display: flex;  gap: 15px;}
-
+section.user-sec-main .container {  display: flex; gap: 88px; align-items: flex-start;}
+section.user-sec-main .side-bar{background: var(--white); border-radius: 10px; border: 1px solid var(--border-dark); padding:24px 0; box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);max-width: 30%; width: 100%; margin-top:-200px;}
+section.user-sec-main .container .user-product-outer { max-width: calc(70% - 88px); width: 100%; padding-top: 40px;}
+section.user-sec-main .container .user-product-outer .filter-bar{padding-bottom: 35px;}
+section.user-sec-main  .product-row {  display: flex;  gap: 54px;  flex-wrap: wrap;}
+section.user-sec-main  .product-row > .user-product-box{width:100%; max-width: calc(50% - 27px);}
+.user-product-box{border: 1px solid var(--border-light);}
+.user-product-box .product-slider img { width: 100%;}
+.user-product-box .product-slider .slick-arrow {  position: absolute;    z-index: 1;    bottom: 30px;  width: 40px;  height: 40px; font-size: 0; border-radius: 100%;  border: none;background-position: center; background-repeat: no-repeat;background-size: 12px; cursor: pointer;}
+.user-product-box .product-slider .slick-prev.slick-arrow{left:15px; background-image: url(../images/Icon\ ionic-ios-arrow-back.png); }
+.user-product-box .product-slider button.slick-next.slick-arrow{right:15px; background-image: url(../images/ionic-ios-arrow-next.png) ;}
+.user-product-box .info-box {padding-top:20px;}
+.user-product-box .info-box .price-size-box,
+.user-product-box .info-box .title-box {  display: flex;  justify-content: space-between; gap: 20px; padding: 0px 20px; align-items: center;}
+.user-product-box .info-box .title-box .notifiction-box a { width: 43px; height: 43px; border-radius: 100%; display: inline-flex; align-items: center;justify-content: center;    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);}
+.user-product-box .info-box .title-box h5{font-size: 28px; font-weight: 500;}
+.user-product-box .info-box .price-size-box h6{font-size: 28px; font-weight: 200;}
+.user-product-box .button-box{padding: 20px;}
+.user-product-box .button-box a{display: block; width: 100%; text-align: center; padding: 14px 20px; font-size: 22px;}
+section.user-sec-main .user-product-outer .filter-bar ul {padding: 0;  list-style: none; margin: 0;display: flex;  align-items: center;  gap: 30px;}
+section.user-sec-main .user-product-outer .filter-bar ul li a{font-size: 22px; font-weight: 500; color: var(--black);}
+section.user-sec-main .user-product-outer .filter-bar ul li a:hover{color: var(--blue-dark);}
+section.user-sec-main .side-bar .user-img-txt-box { padding:0 30px;display: flex;  gap: 15px; border-bottom: 1px solid var(--black); padding-bottom: 30px;}
+section.user-sec-main .side-bar .user-img-txt-box .user-txt h5 {    font-size: 32px; font-weight: 500;}
+.user-sec-main .side-bar .region-bio-box {padding:0; }
+.user-sec-main .side-bar .tag-box h6,
+.user-sec-main .side-bar .region-bio-box .bio h6,
+.user-sec-main .side-bar .region-bio-box .region h6{max-width: 35%; width: 100%;}
+.user-sec-main .side-bar .region-bio-box .region p{font-size: 22px; font-weight: 500; color: var(--black);}
+.user-sec-main .side-bar .region-bio-box .bio p{font-size: 15px; font-weight: 200;}
+.user-sec-main .side-bar .tag-box h6,
+.user-sec-main .side-bar .other-info .box h6,
+.user-sec-main .side-bar .region-bio-box .bio h6,
+.user-sec-main .side-bar .region-bio-box .region h6{
+    font-size: 22px; font-weight: 500; color:var(--blue-dark)}
+    .user-sec-main .side-bar .tag-box,
+    .user-sec-main .side-bar .other-info .box,
+.user-sec-main .side-bar .region-bio-box .bio,
+.user-sec-main .side-bar .region-bio-box .region {  display: flex;  gap: 15px; border-bottom: 1px solid var(--border-light); align-items: center; padding: 30px;}
+.user-sec-main .side-bar .other-info .box{justify-content: space-between;}
+.user-sec-main .side-bar .btn-box { display: grid; grid-template-columns: 1fr; gap: 20px; padding: 30px 30px;}
+.user-sec-main .side-bar .btn-box a{display: block; text-align: center; padding: 14px 20px; font-size: 17px;text-transform: uppercase;}
+.user-sec-main .side-bar .tag-box .inner-box-tag{display: flex; flex-wrap:wrap; gap: 10px;}
+.user-sec-main .side-bar .tag-box .inner-box-tag a {font-size: 15px; border-radius: 10px;font-weight: 200; padding: 10px 15px; border: 1px solid var(--black); color: var(--black);}
+.user-sec-main .side-bar .tag-box .inner-box-tag a:hover{background: var(--black); color: var(--white);}
+.user-sec-main .side-bar .last-button{padding:30px}
+.user-sec-main .side-bar .last-button a{display: block; text-align: center; padding: 14px 20px; font-size: 17px;}
+/*-----------------*/
+header.user-page .header-search input {
+    width: 330px;
+}
+section.full-user-product-box {
+    padding: 60px 0 100px 0;
+}
+section.full-user-product-box .product-row {  display: flex;    gap: 54px;}
+section.full-user-product-box .container{}
+section.full-user-product-box .user-product-box{max-width: calc(33.333% - 36px); width: 100%;;}
 /*-------Footer---------*/
 footer{background:var(--Seashell);padding:90px 0px 55px 0px; }
 footer .logo{text-align:center;}

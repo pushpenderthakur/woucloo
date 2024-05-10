@@ -168,6 +168,9 @@ section.content-sec{padding:100px 0;}
 
 /*------------*/
 .create-account-box {  padding-left: 12%;}
+.create-account-box p{font-size:17px; font-weight:500}
+.create-account-box p a{color: var(--black);}
+.create-account-box p a:hover{color: var(--blue-dark);}
 section.register-sec,  section.sign-in-sec{padding:100px 0}
 section.register-sec .container,  section.sign-in-sec .container{max-width:1420px;}
 section.register-sec .row, section.sign-in-sec .row { display: flex; gap: 80px; align-items: center;}
@@ -206,10 +209,13 @@ footer .logo{text-align:center;}
 .footer-manu-box ul li{width:16%}
 .footer-manu-box ul li ul{display: block;  text-align: left;}
 .footer-manu-box ul li ul li{width:auto;}
-.footer-manu-box ul li ul li a{font-size:23px; padding:10px 0}
+.footer-manu-box ul li ul li a{font-size:23px; padding:10px 0; color: var(--black);}
+.copyright-box p a:hover,
+.footer-manu-box ul li ul li a:hover{color: var(--blue-dark);}
 footer .bottom-row {  display: flex;  justify-content: space-between;  align-items: center; margin-top: 50px;}
 .social-box ul {  padding-left: 0; list-style: none; display: flex; gap: 10px; margin:0px;}
 .copyright-box p {  font-size: 20px; margin:0;}
+.copyright-box p a{color: var(--black);}
 footer .bottom-row .language-box select { background: transparent;  min-width: 200px;}
 
 
@@ -217,7 +223,13 @@ footer .bottom-row .language-box select { background: transparent;  min-width: 2
 @media all and (max-width:1440px){
 header .logo-box {  max-width: 220px;}
 .header-inner {  justify-content: space-between;}
+h1, h2{font-size: 50px;}
+h3{font-size: 30px;}
+h4{font-size: 25px;}
+h5{font-size: 20px;}
+h6{font-size: 18px;}
 
+section.register-sec form a{font-size: 20px;}
 }
 @media all and (max-width:1310px){
     .menu-box .menu > ul li a{font-size:14px; padding:10px;}
@@ -234,14 +246,13 @@ header .logo-box {  max-width: 220px;}
 .menu-box .btn-last a{display:inline-flex}
     .toggle-box a {  width: 35px;  display: block;  height: 35px; position: relative;  }
     .toggle-box a span { display: block; background:var(--black);   height: 2px;  width: 100%; margin: 8px 0;transition:all 0.3s; position:relative }
-
     section.product-menu ul li a span{font-size:18px;}
     .main-slider .slick-dots::before{width:80%;}
     .product-box .product-title h5 {  font-size: 18px;    }
     .product-box .product-info .button-row a { font-size: 14px;}
     section.product-menu ul li a icon{width:100px; height:100px;}
     section.product-menu ul{gap:20px;}
-
+    section.register-sec .row, section.sign-in-sec .row{gap:30px;}
 }
 @media all and (max-width:1199px) and (min-width:992px){
    
@@ -280,6 +291,17 @@ section.featured-items{padding:50px 0}
 .closet-gallery-sec .heading-box, .featured-items .heading-box{margin-bottom:30px;}
 section.content-sec{padding:60px 0}
 footer{padding:50px 0 30px 0}
+section.register-sec .row, section.sign-in-sec .row{flex-wrap: wrap;}
+section.register-sec .row .form-box, section.sign-in-sec .row .form-box{max-width: 100%;}
+section.register-sec, section.sign-in-sec{padding:60px 0}
+}
+@media all and (max-width:580px){
+
+    header.header-register-sign-in .header-inner {  justify-content: center; flex-wrap: wrap;  }
+    .create-account-box{padding-left:0px; width: 100%; text-align: center;}
+    section.register-sec .row .form-box label, section.sign-in-sec .row .form-box div label{font-size: 16px;}
+    section.register-sec form a,
+    section.register-sec .row .form-box div input[type="submit"], section.sign-in-sec .row .form-box div input[type="submit"]{font-size: 18px;}
 }
 @media all and (max-width:480px){
     .newsletter-box form input[type="email"]{width:100%;}

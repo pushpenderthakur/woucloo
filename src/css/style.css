@@ -224,7 +224,10 @@ section.user-sec-main .user-product-outer .filter-bar ul {padding: 0;  list-styl
 section.user-sec-main .user-product-outer .filter-bar ul li a{font-size: 22px; font-weight: 500; color: var(--black);}
 section.user-sec-main .user-product-outer .filter-bar ul li a:hover{color: var(--blue-dark);}
 section.user-sec-main .side-bar .user-img-txt-box { padding:0 30px;display: flex;  gap: 15px; border-bottom: 1px solid var(--black); padding-bottom: 30px;}
-section.user-sec-main .side-bar .user-img-txt-box .user-txt h5 {    font-size: 32px; font-weight: 500;}
+section.user-sec-main .side-bar .user-img-txt-box .user-txt h5 {    font-size: 32px; font-weight: 500;color: var(--blue-dark);}
+section.user-sec-main .side-bar .user-img-txt-box .user-txt > a{font-size: 12px; font-weight: 500;}
+section.user-sec-main .side-bar .verified-box{margin-top: 10px;}
+section.user-sec-main .side-bar .verified-box a{font-size: 15px; color: var(--green); display: flex; align-items: center;font-weight: 500;}
 .user-sec-main .side-bar .region-bio-box {padding:0; }
 .user-sec-main .side-bar .tag-box h6,
 .user-sec-main .side-bar .region-bio-box .bio h6,
@@ -249,15 +252,26 @@ section.user-sec-main .side-bar .user-img-txt-box .user-txt h5 {    font-size: 3
 .user-sec-main .side-bar .last-button{padding:30px}
 .user-sec-main .side-bar .last-button a{display: block; text-align: center; padding: 14px 20px; font-size: 17px;}
 /*-----------------*/
-header.user-page .header-search input {
-    width: 330px;
-}
-section.full-user-product-box {
-    padding: 60px 0 100px 0;
-}
+header.user-page .header-search input {  width: 330px;}
+section.full-user-product-box {  padding: 60px 0 100px 0;}
 section.full-user-product-box .product-row {  display: flex;    gap: 54px;}
 section.full-user-product-box .container{}
-section.full-user-product-box .user-product-box{max-width: calc(33.333% - 36px); width: 100%;;}
+section.full-user-product-box .user-product-box{max-width: calc(33.333% - 36px); width: 100%;}
+/*----------*/
+.user-info-row { padding: 65px 0;  display: grid;grid-template-columns: 1fr 1fr; gap: 30px;}
+.user-info-row .box{border: 1px solid var(--border-dark); border-radius: 10px; padding: 25px 19px; display: flex; align-items: flex-start; gap: 20px;}
+.user-info-row .box .name-info {display: flex; justify-content: space-between; gap: 20px;}
+.user-info-row .box .user-img { width: 100%; max-width: 112px;}
+.user-info-row .box .user-img a{display: flex; align-items: center;justify-content: center; border: 1px solid var(--border-light); border-radius: 100%; height: 112px; width: 100%;}
+.user-info-row .box .text-box {max-width: calc(100% - 112px);  width: 100%;}
+.user-info-row .box .text-box icon a{    width: 43px;  height: 43px; border-radius: 100%; display: inline-flex;    align-items: center;
+    justify-content: center;  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);}
+    .user-info-row .box .user-img a:hover,
+    .user-info-row .box .text-box icon a:hover{filter: brightness(0) invert(0);}
+    .user-info-row .box .name-info .name-box p{font-size: 15px; font-weight: 200;}
+    .user-info-row .box .text-box .btn-box {  display: flex;  gap: 15px; flex-wrap: wrap; justify-content: space-between;}
+
+
 /*-------Footer---------*/
 footer{background:var(--Seashell);padding:90px 0px 55px 0px; }
 footer .logo{text-align:center;}
@@ -293,6 +307,11 @@ h5{font-size: 20px;}
 h6{font-size: 18px;}
 
 section.register-sec form a{font-size: 20px;}
+.user-info-row .box .user-img a{height: 80px;}
+.user-info-row .box .user-img{max-width: 80px;}
+.user-info-row .box .user-img img{width: 30px;}
+.user-info-row .box .text-box{max-width: calc(100% - 80px);}
+.user-info-row .box .text-box .btn-box a { font-size: 14px;}
 }
 @media all and (max-width:1310px){
     .menu-box .menu > ul li a{font-size:14px; padding:10px;}
@@ -300,6 +319,15 @@ section.register-sec form a{font-size: 20px;}
     .footer-manu-box ul li{    width: 20%;}
 }
 @media all and (max-width:1199px){
+    header.user-page .header-search input{max-width: 330px;width: 100%;}
+    .user-page .share-closet-btn{margin-bottom: 15px;}
+    .user-page .share-closet-btn,
+    .user-page .header-search {   text-align: center; }
+    .user-sec-main .side-bar .tag-box h6, .user-sec-main .side-bar .other-info .box h6, .user-sec-main .side-bar .region-bio-box .bio h6, .user-sec-main .side-bar .region-bio-box .region h6, .user-product-box .button-box a,
+    .user-sec-main .side-bar .region-bio-box .region p,
+    section.user-sec-main .user-product-outer .filter-bar ul li a{font-size: 18px;}
+    .user-product-box .info-box .price-size-box h6,
+    .user-product-box .info-box .title-box h5{font-size: 20px; margin: 0;}
     .menu-box {  display: none;position: absolute; width: 100%; left: 0; padding: 30px; top: 100%; background: var(--white); }
     .header-search input {    width: 100%;  }
     .header-search{margin-bottom:15px;}
@@ -326,6 +354,23 @@ section.register-sec form a{font-size: 20px;}
     .user-rating-box, .price-sold-items, .product-title { flex-wrap: wrap;  }
 
 }
+@media all and (max-width:1024px){
+    .user-product-box .info-box .price-size-box h6, .user-product-box .info-box .title-box h5{font-size: 18px;}
+    .user-product-box .info-box .price-size-box p {    font-size: 14px; }
+    .user-sec-main .side-bar .tag-box h6, .user-sec-main .side-bar .other-info .box h6, .user-sec-main .side-bar .region-bio-box .bio h6, .user-sec-main .side-bar .region-bio-box .region h6, .user-product-box .button-box a, .user-sec-main .side-bar .region-bio-box .region p, section.user-sec-main .user-product-outer .filter-bar ul li a{font-size: 16px;}
+    section.user-sec-main .side-bar .user-img-txt-box .user-txt h5{font-size: 28px;}
+    .banner{min-height: 390px;}
+    .banner .back-btn-box a{height: 40px;width: 40px; background-size: 25px;}
+    .banner .back-btn-box a img{max-width: 10px;}
+    section.user-sec-main .container{gap:40px;}
+    section.user-sec-main .container .user-product-outer {
+        max-width: calc(70% - 40px);}
+        section.full-user-product-box .product-row,
+        section.user-sec-main .product-row{gap:30px;}
+        section.full-user-product-box .user-product-box {
+            max-width: calc(33.333% - 20px);}
+
+}
 @media all and (max-width:991px){
     .footer-manu-box h4 { font-size: 25px; }
     .footer-manu-box ul li ul li a{font-size:18px;}
@@ -334,11 +379,23 @@ section.register-sec form a{font-size: 20px;}
     section.featured-items .four-grid { grid-template-columns: 1fr 1fr;    }
     footer .bottom-row{flex-wrap:wrap;gap:20px; justify-content:center}
 }
+@media all and (max-width:1199px) and (min-width:768px){
+    .user-info-row .box {   flex-wrap: wrap;  justify-content: center; }
+    .user-info-row .box .text-box{max-width: 100%;}
 
+}
 @media all and (max-width:767px){
 h1, h2{font-size:45px}
 .menu-box .menu > ul{display:block; text-align:center}
-
+.user-info-row .box {   flex-wrap: wrap;  justify-content: center; }
+.user-info-row .box .text-box{max-width: 100%;}
+section.user-sec-main .container{flex-wrap: wrap; gap: 30px;}
+section.user-sec-main .side-bar { order: 1; width: 100%; max-width: 100%; margin: 0;}
+section.user-sec-main .container .user-product-outer{max-width: 100%;}
+section.full-user-product-box .user-product-box,
+section.user-sec-main .product-row > .user-product-box {    width: 100%; max-width: calc(50% - 15px);}
+section.full-user-product-box{padding:60px 0}
+section.full-user-product-box .product-row {    justify-content: center;flex-wrap: wrap;}
 .closet-gallery-sec .heading-box, .featured-items .heading-box{flex-wrap:wrap;}
 .closet-gallery-sec .heading-box h2, .featured-items .heading-box h2 { width: 100%;}
 .featured-items .featured-fillter-box{right:auto; left:0px;}
@@ -358,8 +415,14 @@ section.register-sec .row, section.sign-in-sec .row{flex-wrap: wrap;}
 section.register-sec .row .form-box, section.sign-in-sec .row .form-box{max-width: 100%;}
 section.register-sec, section.sign-in-sec{padding:60px 0}
 }
+@media all and (max-width:620px){
+    .user-info-row{grid-template-columns: 1fr;}
+}
 @media all and (max-width:580px){
-
+    section.user-sec-main .user-product-outer .filter-bar ul{flex-wrap: wrap; justify-content: center;}
+    .banner { min-height: 245px; background-position: center right;}
+    section.full-user-product-box .user-product-box,
+    section.user-sec-main .product-row > .user-product-box{max-width: 100%;}
     header.header-register-sign-in .header-inner {  justify-content: center; flex-wrap: wrap;  }
     .create-account-box{padding-left:0px; width: 100%; text-align: center;}
     section.register-sec .row .form-box label, section.sign-in-sec .row .form-box div label{font-size: 16px;}

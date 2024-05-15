@@ -283,9 +283,10 @@ section.full-user-product-box .user-product-box{max-width: calc(33.333% - 36px);
 .popup-product .popup-body .popup-body-inner .text-box p{font-size:20px; line-height:1.3}
 .popup-product .popup-footer {  display: flex; padding-top: 30px; justify-content: flex-end; gap: 15px; flex-wrap: wrap;}
 /*--*/
-
-.featured-fislter-box {  max-width: 459px;  width: 100%; position: fixed;  left: 0; right: 0; margin: 0 auto; background:var(--white);    border-radius: 10px;  border: 1px solid var(--border-light);  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2); display: none;}
-.all-product  .product-side-filter .featured-fislter-box{display: block;position: unset;}
+section.featured-items .right-box .filter-box .featured-fislter-box { max-height: 80vh; overflow: auto;}
+.featured-fislter-box {  max-width: 459px;  width: 100%; position: fixed;  left: 0; right: 0; margin: 0 auto; background:var(--white);    border-radius: 10px;  border: 1px solid var(--border-light);  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2); display: none; top: 50%;
+    transform: translateY(-50%);}
+.all-product  .product-side-filter .featured-fislter-box{display: block;position: unset; transform: none;}
 .all-product {display: flex;  gap: 24px;}
 .featured-fislter-box .filter-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 28px; border-bottom:1px solid var(--border-light)}
 .featured-fislter-box .filter-header h4{font-size: 29px; font-weight: 500;}
@@ -295,8 +296,38 @@ section.full-user-product-box .user-product-box{max-width: calc(33.333% - 36px);
 .featured-fislter-box .rating-box,
 .featured-fislter-box .region-box,
 .featured-fislter-box .condition-box{ padding:20px 28px; border-bottom:1px solid var(--border-light)}
-.featured-fislter-box ul{padding: 0px; list-style: none; display: flex;}
-
+.featured-fislter-box ul{padding: 0px; list-style: none; display: flex; gap:20px; flex-wrap: wrap;}
+.featured-fislter-box ul li { display: flex; align-items: center;gap: 5px;}
+.featured-fislter-box .condition-box form input[type="checkbox"] { width: 28px; height: 25px;}
+.featured-fislter-box .condition-box form label{font-size: 15px;font-weight: 200;}
+.featured-fislter-box .tag-box .tag-list li a{color: var(--black); padding: 10px 15px; border: 1px solid var(--border-dark); border-radius: 10px; font-size: 15px; font-weight: 200;}
+.price-box .price-input { width: 100%; display: flex; margin: 30px 0 35px; }
+.price-box .price-input .field {    display: flex;  width: 100%;  height: 45px;  align-items: center;}
+.price-box .field input {  width: 100%; height: 100%;  outline: none;  font-size: 19px; margin-left: 12px;  border-radius: 5px;text-align: center; border: 1px solid #999;  -moz-appearance: textfield;}
+.price-box input[type="number"]::-webkit-outer-spin-button,
+.price-box input[type="number"]::-webkit-inner-spin-button {    -webkit-appearance: none;  }
+.price-box .price-input .separator {    width: 130px;  display: flex;  font-size: 19px;  align-items: center; justify-content: center;}
+.price-box  .slider { height: 5px; position: relative;  background: #ddd;  border-radius: 5px;}
+.price-box .slider .progress {  height: 100%;  left: 25%;  right: 25%;  position: absolute; border-radius: 5px; background: #17a2b8;  }
+.price-box .range-input {  position: relative;  }
+.price-box .range-input input {   position: absolute;width: 100%; height: 5px; top: -5px; background: none; pointer-events: none; -webkit-appearance: none;-moz-appearance: none; }
+.price-box input[type="range"]::-webkit-slider-thumb { height: 17px;  width: 17px;  border-radius: 50%;  background: #17a2b8; pointer-events: auto; -webkit-appearance: none; box-shadow: 0 0 6px rgba(0, 0, 0, 0.05); }
+.price-box input[type="range"]::-moz-range-thumb {    height: 17px; width: 17px; border: none;   border-radius: 50%;  background: #17a2b8;  pointer-events: auto; -moz-appearance: none; box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);  }
+    /* Support */
+    .price-box .support-box { top: 2rem; position: relative; bottom: 0; text-align: center; display: block; }
+    .price-box .b-btn {color: white;  text-decoration: none;  font-weight: bold;  }
+    .price-box .b-btn.paypal i { color: blue;  }
+    .price-box .b-btn:hover { text-decoration: none; font-weight: bold;  }
+    .price-box .b-btn i {  font-size: 20px; color: yellow; margin-top: 2rem;  }
+    .gold-color{color: gold;}
+    .featured-fislter-box .rating-box .rating-list { display: flex; align-items: center; justify-content: center;  font-size: 24px;
+        gap: 20px; }
+.region-box-form input {width: 100%;}
+.featured-fislter-box .btn-wrap {  padding: 30px; display: flex; justify-content: center;  gap: 20px;}
+.box.hidden{display: none;}
+.user-rating-box .user-box a {
+    box-shadow: none;
+}
 /*-------Footer---------*/
 footer{background:var(--Seashell);padding:90px 0px 55px 0px; }
 footer .logo{text-align:center;}
@@ -397,6 +428,8 @@ section.register-sec form a{font-size: 20px;}
 
 }
 @media all and (max-width:991px){
+    .all-product .three-grid {  grid-template-columns: 1fr 1fr;    }
+    .product-box .product-box-outer .button-row{flex-wrap: wrap;gap: 15px;}
     .footer-manu-box h4 { font-size: 25px; }
     .footer-manu-box ul li ul li a{font-size:18px;}
     section.product-menu ul{flex-wrap:wrap;}
@@ -409,8 +442,14 @@ section.register-sec form a{font-size: 20px;}
     .user-info-row .box .text-box{max-width: 100%;}
 
 }
+@media all and (max-width:920px){
+    .all-product .product-side-filter {  max-width: 100%;  width: 100%; }
+    .all-product{flex-wrap: wrap;}
+    .all-product .product-side-filter .featured-fislter-box {  max-width: 100%; }
+}
 @media all and (max-width:767px){
-h1, h2{font-size:45px}
+h1{font-size:45px}
+ h2{font-size: 35px;}
 .menu-box .menu > ul{display:block; text-align:center}
 .user-info-row .box {   flex-wrap: wrap;  justify-content: center; }
 .user-info-row .box .text-box{max-width: 100%;}
@@ -439,6 +478,10 @@ footer{padding:50px 0 30px 0}
 section.register-sec .row, section.sign-in-sec .row{flex-wrap: wrap;}
 section.register-sec .row .form-box, section.sign-in-sec .row .form-box{max-width: 100%;}
 section.register-sec, section.sign-in-sec{padding:60px 0}
+.featured-fislter-box .head a img,
+.featured-fislter-box .filter-header a img { max-width: 30px;}
+.all-product .three-grid{grid-template-columns: 1fr; width: 100%;}
+.all-product .three-grid .product-box{width: 100%;}
 }
 @media all and (max-width:620px){
     .user-info-row{grid-template-columns: 1fr;}
